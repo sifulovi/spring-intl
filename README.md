@@ -1,5 +1,14 @@
+# Internationalization i18n Using Spring Boot
 
-- With using the ?lang=en appended in url, need to add following 
+Technology Stacks:
+1. Java 21
+2. Spring Boot 3.2
+2. Thymeleaf Template Engine
+3. Language support: English & Bangla
+
+Two way we can configure internationalization aka multi-language support using Spring Boot. 
+
+- With using the **?lang=en** appended in url, need to add following 
 ```
  @Bean
     public LocaleChangeInterceptor localeChangeInterceptor() {
@@ -41,3 +50,6 @@ And JS code
     }
 </script>
 ```
+
+## Result
+[view.webm](view.webm)
