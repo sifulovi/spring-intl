@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intl 2</title>
+</head>
+<body>
+<h4><a href="/"  > [[#{way1}]]  </a></h4>
+
+<h1 th:text="#{greetingMessage}"></h1>
+
+<div>
+    <p>
+        <a href="javascript:void(0);" onclick="changeLanguage('en')" th:text="#{language.english}">English</a> |
+        <a href="javascript:void(0);" onclick="changeLanguage('bn')" th:text="#{language.bn}">Bangla</a>
+    </p>
+</div>
+
+<script th:inline="javascript">
+    function changeLanguage(lang) {
+        document.cookie = "lang=" + lang;
+        document.location.reload();
+    }
+</script>
+</body>
+</html>
