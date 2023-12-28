@@ -27,16 +27,10 @@ Two way we can configure internationalization aka multi-language support using S
 
 ``` 
 @Bean
-    public LocaleChangeInterceptor localeChangeInterceptor() {
-        LocaleChangeInterceptor lci = new LocaleChangeInterceptor();
-        lci.setParamName("lang");
-        return lci;
-    }
-
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(localeChangeInterceptor());
-
+    public LocaleResolver localeResolver() {
+        CookieLocaleResolver clr = new CookieLocaleResolver("lang");
+        clr.setDefaultLocale(Locale.US);
+        return clr;
     }
     
 ```
