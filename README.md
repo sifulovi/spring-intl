@@ -52,4 +52,4 @@ And JS code
 ```
 
 ## Result
-[view.webm](view.webm)
+[view.webm](https://github.com/sifulovi/spring-intl/assets/11840131/781ed3df-f8f8-45d1-bb46-57bf06d535dc)
